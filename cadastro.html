@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
     <title>Document</title>
 </head>
+
 <body>
     <main>
         <h1>Cadastro</h1>
         <form>
             <label for="nome">Nome Completo</label>
-            <input type="text" id="nome">
+            <input type="text" id="nome" placeholder="digite seu nome">
 
             <label for="email">Email</label>
             <input type="email" name="email" id="email">
@@ -21,7 +24,7 @@
             <label for="data">Data de Nascimento</label>
             <input type="date" name="data" id="data">
 
-            <label for="">Gênero</label>
+            <label for="" id="genero">Gênero</label>
 
             <input type="radio" name="genero" id="f">
             <label for="f">Feminino</label>
@@ -31,26 +34,31 @@
 
             <input type="radio" name="genero" id="o">
             <label for="o">Outro</label>
-            <textarea placeholder="Descreva" name="genero" id=""></textarea>
-
-            <label for="">Stacks</label>
-
-            <input type="checkbox" name="stacks" id="html">
-            <label for="html">HTML</label>
-
-            <input type="checkbox" name="stacks" id="css">
-            <label for="css">CSS</label>
-
-            <input type="checkbox" name="stacks" id="js">
-            <label for="js">JavaScript</label>
-
-            <input type="checkbox" name="stacks" id="node">
-            <label for="node">Node</label>
-
-            <input type="checkbox" name="stacks" id="sql">
-            <label for="sql">SQL</label>
-
-            <label for="turno">Selecionar turno</label>
+            <textarea placeholder="Descreva" name="genero" id="" cols="30" rows="5"></textarea>
+            <div class="">
+                <label for="" id="stack">Stacks</label>
+                <div class="div-stack">
+                    <input type="checkbox" name="stacks" id="html">
+                    <label for="html">HTML</label>
+                </div>
+                <div class="div-stack">
+                    <input type="checkbox" name="stacks" id="css">
+                    <label for="css">CSS</label>
+                </div>
+                <div class="div-stack">
+                    <input type="checkbox" name="stacks" id="js">
+                    <label for="js">JavaScript</label>
+                </div>
+                <div class="div-stack">
+                    <input type="checkbox" name="stacks" id="node">
+                    <label for="node">Node</label>
+                </div>
+                <div class="div-stack">
+                    <input type="checkbox" name="stacks" id="sql">
+                    <label for="sql">SQL</label>
+                </div>
+            </div>
+            <label for="turno" id="turno-label">Selecionar turno</label>
 
             <select name="turno" id="turno">
                 <option value="manha">Manhã</option>
@@ -62,4 +70,5 @@
         </form>
     </main>
 </body>
+
 </html>
